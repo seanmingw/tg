@@ -101,7 +101,7 @@ services:
       - "mariadb_user=root"
       - "mariadb_pas=${MARIADB_PASSWORD:-changeme}"
       - "database=trojan_panel_db"
-      - "account-table=account"
+      - "account_table=account"
       - "redis_host=trojan-panel-redis"
       - "redis_port=6378"
       - "redis_pass=${REDIS_PASSWORD:-changeme}"
