@@ -22,7 +22,7 @@ init_var() {
   # Project directory
   TP_DATA="$HOME/tpdata/"
 
-  STATIC_HTML="https://github.com/seanmingw/tg/releases/download/v1.0/html.tar.gz"
+  STATIC_HTML="https://cdn.jsdelivr.net/gh/seanmingw/tg@main/releases/download/v1.0/html.tar.gz"
 
   # Web
   WEB_PATH="${TP_DATA}web/"
