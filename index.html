@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trojan Panel 安装指南</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+        .copy-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trojan Panel 安装指南</h1>
+    
+    <h2>快速安装</h2>
+    <p>使用以下命令安装Trojan Panel：</p>
+    <div>
+        <pre><code>bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/seanmingw/tg@main/install-script/install_script.sh)"</code></pre>
+        <button class="copy-btn" onclick="copyToClipboard('install-cmd')">复制</button>
+    </div>
+    
+    <h2>查看帮助</h2>
+    <div>
+        <pre><code>bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/seanmingw/tg@main/install-script/install_script.sh)" -- -h</code></pre>
+        <button class="copy-btn" onclick="copyToClipboard('help-cmd')">复制</button>
+    </div>
+    
+    <h2>查看版本</h2>
+    <div>
+        <pre><code>bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/seanmingw/tg@main/install-script/install_script.sh)" -- -v</code></pre>
+        <button class="copy-btn" onclick="copyToClipboard('version-cmd')">复制</button>
+    </div>
+    
+    <h2>注意事项</h2>
+    <ul>
+        <li>安装脚本使用jsDelivr CDN，解决了无法访问raw.githubusercontent.com的问题</li>
+        <li>静态资源文件也使用jsDelivr CDN加速</li>
+    </ul>
+    
+    <script>
+        function copyToClipboard(id) {
+            const el = document.querySelector('#' + id);
+            const text = el.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('已复制到剪贴板！');
+            });
+        }
+    </script>
+</body>
+</html>
