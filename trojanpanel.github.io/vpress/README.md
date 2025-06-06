@@ -35,16 +35,16 @@ footer: Copyright © 2021-2023 Trojan Panel
 - 联机（推荐）
 
     ```shell
-    source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script.sh)
+    source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script.sh)
     ```
 
 - 单机
 
     ```shell
-    source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script_standalone.sh)
+    source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script_standalone.sh)
     ```
 
-- [安装旧版本](https://github.com/trojanpanel/install-script/tree/main/README_ZH.md)
+- [安装旧版本](https://github.com/seanmingw/tg/tree/main/README_ZH.md)
 
 ## ✨ 社区
 

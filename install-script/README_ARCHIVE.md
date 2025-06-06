@@ -17,7 +17,7 @@
 # Install old version
 
 ```shell
-source <(curl -L https://github.com/seanmingw/tgpannel/raw/main/archive/install_script_{old_version}.sh)
+source <(curl -L https://github.com/seanmingw/tg/raw/main/archive/install_script_{old_version}.sh)
 ```
 
 explanation of params:

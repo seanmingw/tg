@@ -16,7 +16,7 @@ init_var() {
   # Project directory
   TP_DATA="/tpdata/"
 
-  STATIC_HTML="https://github.com/trojanpanel/install-script/releases/download/v1.0/html.tar.gz"
+  STATIC_HTML="https://github.com/seanmingw/tg/releases/download/v1.0/html.tar.gz"
 
   # Web
   WEB_PATH="/tpdata/web/"
@@ -950,8 +950,8 @@ main() {
   echo_content skyBlue "System Required: CentOS 7+/Ubuntu 18+/Debian 10+"
   echo_content skyBlue "Description: One click Install Trojan Panel standalone server"
   echo_content skyBlue "Author: jonssonyan <https://jonssonyan.com>"
-  echo_content skyBlue "Github: https://github.com/seanmingw/tgpannel"
-  echo_content skyBlue "Docs: https://tgpannel.com/docs"
+  echo_content skyBlue "Github: https://github.com/seanmingw/tg"
+  echo_content skyBlue "Docs: https://tg.com/docs"
   echo_content red "\n=============================================================="
   echo_content yellow "2. Install TrojanGO+Caddy2+Web+TLS+Websocket"
   echo_content yellow "3. Install Hysteria"

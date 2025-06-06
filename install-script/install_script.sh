@@ -6,7 +6,7 @@ export PATH
 # Version: v2.3.2
 # Description: One click Install Trojan Panel server
 # Author: jonssonyan <https://jonssonyan.com>
-# Github: https://github.com/seanmingw/tgpannel
+# Github: https://github.com/seanmingw/tg
 
 init_var() {
   ECHO_TYPE="echo -e"
@@ -22,7 +22,7 @@ init_var() {
   # Project directory
   TP_DATA="$HOME/tpdata/"
 
-  STATIC_HTML="https://github.com/seanmingw/tgpannel/releases/download/v1.0/html.tar.gz"
+  STATIC_HTML="https://github.com/trojanpanel/install-script/releases/download/v1.0/html.tar.gz"
 
   # Web
   WEB_PATH="${TP_DATA}web/"
@@ -1905,7 +1905,7 @@ main() {
   echo_content skyBlue "Version: v2.3.2"
   echo_content skyBlue "Description: One click Install Trojan Panel server"
   echo_content skyBlue "Author: jonssonyan <https://jonssonyan.com>"
-  echo_content skyBlue "Github: https://github.com/seanmingw/tgpannel"
+  echo_content skyBlue "Github: https://github.com/seanmingw/tg"
   echo_content skyBlue "Docs: https://tgpannel.com/docs"
   echo_content red "\n=============================================================="
   echo_content yellow "1. Install Trojan Panel Frontend"

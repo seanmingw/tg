@@ -7,14 +7,20 @@ import (
 
 // response object
 type hysteria2Result struct {
-	Ok bool   `json:"ok"`
-	Id string `json:"id"`
+	Ok                 bool   `json:"ok"`
+	Id                 string `json:"id"`
+	IpLimit            int    `json:"ip_limit"`
+	DownloadSpeedLimit int    `json:"download_speed_limit"`
+	UploadSpeedLimit   int    `json:"upload_speed_limit"`
 }
 
-func Hysteria2ApiSuccess(id string, c *gin.Context) {
+func Hysteria2ApiSuccess(id string, ipLimit int, downloadSpeedLimit int, uploadSpeedLimit int, c *gin.Context) {
 	c.JSON(http.StatusOK, hysteria2Result{
-		Ok: true,
-		Id: id,
+		Ok:                 true,
+		Id:                 id,
+		IpLimit:            ipLimit,
+		DownloadSpeedLimit: downloadSpeedLimit,
+		UploadSpeedLimit:   uploadSpeedLimit,
 	})
 }
 

@@ -52,16 +52,16 @@ CPU: linux/amd64 / linux/arm/v6 / linux/arm/v7 / linux/arm64 / linux/s390x / lin
 1. 联机版（推荐）
 
    ```shell
-   source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script.sh)
+   source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script.sh)
    ```
 
 2. 单机版
 
    ```shell
-   source <(curl -L https://github.com/trojanpanel/install-script/raw/main/install_script_standalone.sh)
+   source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script_standalone.sh)
    ```
 
-3. [安装旧版](https://github.com/trojanpanel/install-script/blob/main/README_ARCHIVE.md)
+3. [安装旧版](https://github.com/seanmingw/tg/blob/main/README_ARCHIVE.md)
 
 ## 安装Trojan Panel
 

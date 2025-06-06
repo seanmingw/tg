@@ -2,7 +2,7 @@
   "name": "trojan-panel-doc",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:trojanpanel/trojan-panel-doc.git",
+  "repository": "git@github.com:seanmingw/tg.git",
   "author": "jonssonyan <https://jonssonyan.com>",
   "private": true,
   "scripts": {

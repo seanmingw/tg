@@ -40,13 +40,13 @@ Memory: ≥ 1G
 - Online(recommended)
 
     ```shell
-    source <(curl -L https://github.com/seanmingw/tgpannel/raw/main/install_script.sh)
+    source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script.sh)
     ```
 
 - Standalone
 
     ```shell
-    source <(curl -L https://github.com/seanmingw/tgpannel/raw/main/install_script_standalone.sh)
+    source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script_standalone.sh)
     ```
 
 - [Install old version](README_ARCHIVE.md)
@@ -67,7 +67,7 @@ Visit [https://tgpannel.com/docs/change/change-log.html](https://tgpannel.com/do
 
 ## Bugs & Issues
 
-[Issues](https://github.com/seanmingw/tgpannel/issues)
+[Issues](https://github.com/seanmingw/tg/issues)
 
 ## Thanks
 
@@ -79,4 +79,4 @@ Visit [https://tgpannel.com/docs/change/change-log.html](https://tgpannel.com/do
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/seanmingw/tgpannel.svg)](https://github.com/seanmingw/tgpannel)
+[![Stargazers over time](https://starchart.cc/seanmingw/tg.svg)](https://github.com/seanmingw/tg)

@@ -17,7 +17,7 @@
 ## 安装旧版
 
 ```shell
-source <(curl -L https://github.com/seanmingw/tgpannel/raw/main/archive/install_script_{old_version}.sh)
+source <(curl -L https://github.com/seanmingw/tg/raw/main/archive/install_script_{old_version}.sh)
 ```
 
 参数解释:

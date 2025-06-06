@@ -36,13 +36,13 @@ CPU: linux/amd64 / linux/arm/v6 / linux/arm/v7 / linux/arm64 / linux/s390x / lin
 - 联机（推荐）
 
     ```shell
-    source <(curl -L https://github.com/seanmingw/tgpannel/raw/main/install_script.sh)
+    source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script.sh)
     ```
 
 - 单机
 
     ```shell
-    source <(curl -L https://github.com/seanmingw/tgpannel/raw/main/install_script_standalone.sh)
+    source <(curl -L https://github.com/seanmingw/tg/raw/main/install_script_standalone.sh)
     ```
 
 - [安装旧版本](README_ARCHIVE_ZH.md)
@@ -63,7 +63,7 @@ Telegram频道: https://t.me/seanmingw
 
 ## 报告缺陷与问题
 
-[Issues](https://github.com/seanmingw/tgpannel/issues)
+[Issues](https://github.com/seanmingw/tg/issues)
 
 ## 致谢
 
@@ -75,4 +75,4 @@ Telegram频道: https://t.me/seanmingw
 
 ## Star随时间变化
 
-[![Stargazers over time](https://starchart.cc/seanmingw/tgpannel.svg)](https://github.com/seanmingw/tgpannel)
+[![Stargazers over time](https://starchart.cc/seanmingw/tg.svg)](https://github.com/seanmingw/tg)

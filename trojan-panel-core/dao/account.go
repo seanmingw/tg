@@ -93,7 +93,7 @@ func SelectAccountByPass(pass string) (*vo.AccountHysteriaVo, error) {
 	mySQLConfig := core.Config.MySQLConfig
 	var account model.Account
 
-	buildSelect, values, err := builder.NamedQuery(fmt.Sprintf("select id from %s where (quota < 0 or quota > download + upload) and pass = {{pass}}", mySQLConfig.AccountTable),
+	buildSelect, values, err := builder.NamedQuery(fmt.Sprintf("select id,username,ip_limit,download_speed_limit,upload_speed_limit from %s where (quota < 0 or quota > download + upload) and pass = {{pass}}", mySQLConfig.AccountTable),
 		map[string]interface{}{
 			"pass": pass,
 		})
@@ -116,8 +116,27 @@ func SelectAccountByPass(pass string) (*vo.AccountHysteriaVo, error) {
 		return nil, errors.New(constant.SysError)
 	}
 
+	ipLimit := 0
+	if account.IpLimit != nil {
+		ipLimit = *account.IpLimit
+	}
+
+	downloadSpeedLimit := 0
+	if account.DownloadSpeedLimit != nil {
+		downloadSpeedLimit = *account.DownloadSpeedLimit
+	}
+
+	uploadSpeedLimit := 0
+	if account.UploadSpeedLimit != nil {
+		uploadSpeedLimit = *account.UploadSpeedLimit
+	}
+
 	AccountHysteriaVo := vo.AccountHysteriaVo{
-		Id: *account.Id,
+		Id:                 *account.Id,
+		Username:           *account.Username,
+		IpLimit:            ipLimit,
+		DownloadSpeedLimit: downloadSpeedLimit,
+		UploadSpeedLimit:   uploadSpeedLimit,
 	}
 	return &AccountHysteriaVo, nil
 }

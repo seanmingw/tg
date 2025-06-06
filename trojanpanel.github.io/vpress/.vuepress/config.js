@@ -32,7 +32,7 @@ module.exports = {
             {
                 text: 'FAQ', link: '/faq/faq'
             }, {text: '更新日志', link: '/change/change-log'}, {
-                text: 'GitHub', link: 'https://github.com/trojanpanel'
+                text: 'GitHub', link: 'https://github.com/seanmingw/tg'
             }],
         sidebar: {
             '/start/': ['introduce', 'system-structure'],

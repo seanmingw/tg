@@ -1,5 +1,5 @@
 # Core SDK
 
-项目地址：https://github.com/trojanpanel/core-sdk
+项目地址：https://github.com/seanmingw/tg/core-sdk
 
-Demo地址：https://github.com/trojanpanel/core-sdk-example
+Demo地址：https://github.com/seanmingw/tg/core-sdk-example
