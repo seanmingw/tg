@@ -1,0 +1,19 @@
+# IDE files
+/.idea/
+/.vscode/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+install.log
+
+# Data directories
+/tpdata/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.DS_Store

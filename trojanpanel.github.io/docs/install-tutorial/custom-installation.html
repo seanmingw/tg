@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>手动安装教程 | Trojan Panel</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="logo.png">
+    <script>
+    var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?37275f991707c27db91dbb6f668ee1c6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9763379843362753" crossorigin="anonymous"></script>
+    <meta name="description" content="支持Xray/Trojan-Go/Hysteria/NaiveProxy的多用户Web管理面板">
+    
+    <link rel="preload" href="/assets/css/0.styles.12f79669.css" as="style"><link rel="preload" href="/assets/js/app.384b123e.js" as="script"><link rel="preload" href="/assets/js/2.1c3af5e4.js" as="script"><link rel="preload" href="/assets/js/11.0fe16700.js" as="script"><link rel="prefetch" href="/assets/js/10.2cfadcc6.js"><link rel="prefetch" href="/assets/js/12.a62f3732.js"><link rel="prefetch" href="/assets/js/13.4ac64c97.js"><link rel="prefetch" href="/assets/js/14.aa539760.js"><link rel="prefetch" href="/assets/js/15.051117bc.js"><link rel="prefetch" href="/assets/js/16.87edfbed.js"><link rel="prefetch" href="/assets/js/17.376c9f99.js"><link rel="prefetch" href="/assets/js/18.d0bccbb6.js"><link rel="prefetch" href="/assets/js/19.93bfc192.js"><link rel="prefetch" href="/assets/js/20.b7466b43.js"><link rel="prefetch" href="/assets/js/21.c041670b.js"><link rel="prefetch" href="/assets/js/22.5e0c267f.js"><link rel="prefetch" href="/assets/js/23.bbef9ad9.js"><link rel="prefetch" href="/assets/js/3.d121da88.js"><link rel="prefetch" href="/assets/js/4.859a94f2.js"><link rel="prefetch" href="/assets/js/5.7fbb9279.js"><link rel="prefetch" href="/assets/js/6.a6f419ac.js"><link rel="prefetch" href="/assets/js/7.498f78f2.js"><link rel="prefetch" href="/assets/js/8.9f4c9859.js"><link rel="prefetch" href="/assets/js/9.26681ddf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.12f79669.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Trojan Panel" class="logo"> <span class="site-name can-hide">Trojan Panel</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/start/introduce.html" class="nav-link">
+  新手起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="相关教程" class="dropdown-title"><span class="title">相关教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="相关教程" class="mobile-dropdown-title"><span class="title">相关教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/install-tutorial/installation.html" class="nav-link">
+  安装教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorial/using-tutorials.html" class="nav-link">
+  使用教程
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发文档" class="dropdown-title"><span class="title">开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发文档" class="mobile-dropdown-title"><span class="title">开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/api/api.html" class="nav-link">
+  API文档
+</a></li><li class="dropdown-item"><!----> <a href="/sdk/sdk.html" class="nav-link">
+  Core SDK
+</a></li></ul></div></div><div class="nav-item"><a href="/faq/faq.html" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><a href="/change/change-log.html" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><a href="https://github.com/trojanpanel" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/start/introduce.html" class="nav-link">
+  新手起步
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="相关教程" class="dropdown-title"><span class="title">相关教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="相关教程" class="mobile-dropdown-title"><span class="title">相关教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/install-tutorial/installation.html" class="nav-link">
+  安装教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorial/using-tutorials.html" class="nav-link">
+  使用教程
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发文档" class="dropdown-title"><span class="title">开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发文档" class="mobile-dropdown-title"><span class="title">开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/api/api.html" class="nav-link">
+  API文档
+</a></li><li class="dropdown-item"><!----> <a href="/sdk/sdk.html" class="nav-link">
+  Core SDK
+</a></li></ul></div></div><div class="nav-item"><a href="/faq/faq.html" class="nav-link">
+  FAQ
+</a></div><div class="nav-item"><a href="/change/change-log.html" class="nav-link">
+  更新日志
+</a></div><div class="nav-item"><a href="https://github.com/trojanpanel" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/install-tutorial/installation.html" class="sidebar-link">自动安装教程</a></li><li><a href="/install-tutorial/custom-installation.html" aria-current="page" class="active sidebar-link">手动安装教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#准备" class="sidebar-link">准备</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装docker" class="sidebar-link">安装Docker</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装caddy2" class="sidebar-link">安装Caddy2</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装mariadb" class="sidebar-link">安装MariaDB</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装redis" class="sidebar-link">安装Redis</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装trojan-panel-backend" class="sidebar-link">安装Trojan Panel Backend</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装trojan-panel-frontend" class="sidebar-link">安装Trojan Panel Frontend</a></li><li class="sidebar-sub-header"><a href="/install-tutorial/custom-installation.html#安装trojan-panel-core" class="sidebar-link">安装Trojan Panel Core</a></li></ul></li><li><a href="/install-tutorial/docker-compose.html" class="sidebar-link">Docker Compose方式安装</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="手动安装教程"><a href="#手动安装教程" class="header-anchor">#</a> 手动安装教程</h1> <h2 id="准备"><a href="#准备" class="header-anchor">#</a> 准备</h2> <h4 id="安装顺序"><a href="#安装顺序" class="header-anchor">#</a> 安装顺序</h4> <p>Docker -&gt; Caddy2 -&gt; MariaDB -&gt; Redis -&gt; Trojan Panel Backend -&gt; Trojan Panel Frontend -&gt; Trojan Panel Core</p> <h4 id="版本对应关系"><a href="#版本对应关系" class="header-anchor">#</a> 版本对应关系</h4> <table><thead><tr><th>名称</th> <th>版本</th></tr></thead> <tbody><tr><td>Docker</td> <td>latest</td></tr> <tr><td>Nginx</td> <td>1.20-alpine</td></tr> <tr><td>Caddy2</td> <td>2.6.2</td></tr> <tr><td>MariaDB</td> <td>10.7.3</td></tr> <tr><td>Redis</td> <td>6.2.7</td></tr> <tr><td>Trojan Panel Frontend</td> <td>latest</td></tr> <tr><td>Trojan Panel Backend</td> <td>latest</td></tr> <tr><td>Trojan Panel Core</td> <td>latest</td></tr></tbody></table> <h2 id="安装docker"><a href="#安装docker" class="header-anchor">#</a> 安装Docker</h2> <blockquote><p>Docker官方安装教程：https://docs.docker.com/engine/install/</p></blockquote> <h2 id="安装caddy2"><a href="#安装caddy2" class="header-anchor">#</a> 安装Caddy2</h2> <blockquote><p>Docker Hub：https://hub.docker.com/_/caddy</p></blockquote> <ol><li><p>Pull the image</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> pull caddy:2.6.2
+</code></pre></div></li> <li><p>Start a container</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> trojan-panel-caddy <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
+<span class="token parameter variable">--network</span><span class="token operator">=</span>host <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token string">&quot;<span class="token variable">${CADDY_CONFIG}</span>&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;<span class="token variable">${CADDY_CONFIG}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${CERT_PATH}</span><span class="token builtin class-name">:</span><span class="token string">&quot;/tpdata/cert/certificates/acme-v02.api.letsencrypt.org-directory/<span class="token variable">${domain}</span>/&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${WEB_PATH}</span><span class="token builtin class-name">:</span><span class="token variable">${WEB_PATH}</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${CADDY_LOG}</span><span class="token builtin class-name">:</span><span class="token variable">${CADDY_LOG}</span> <span class="token punctuation">\</span>
+caddy:2.6.2 caddy run <span class="token parameter variable">--config</span> <span class="token variable">${CADDY_CONFIG}</span>
+</code></pre></div></li></ol> <p>参数解释：</p> <ul><li><code>--name trojan-panel-redis</code>：定义容器的名称</li> <li><code>--restart always</code>：容器随着Docker启动而启动</li> <li><code>--network=host</code>：使用Host网络模式</li> <li><code>-v &quot;${CADDY_CONFIG}&quot;:&quot;${CADDY_CONFIG}&quot;</code>：映射Caddy配置文件</li> <li><code>-v ${CERT_PATH}:&quot;/tpdata/cert/certificates/acme-v02.api.letsencrypt.org-directory/${domain}/&quot;</code>：映射证书文件夹</li> <li><code>-v ${WEB_PATH}:${WEB_PATH}</code>：映射伪装网站文件夹</li> <li><code>-v ${CADDY_LOG}:${CADDY_LOG}</code>：日志文件夹</li> <li><code>caddy run --config ${CADDY_CONFIG}</code>：指定配置文件运行</li></ul> <p>Caddy配置举例</p> <ol><li>acme自动申请和续签</li></ol> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;admin&quot;:{
+        &quot;disabled&quot;:true
+    },
+    &quot;logging&quot;:{
+        &quot;logs&quot;:{
+            &quot;default&quot;:{
+                &quot;writer&quot;:{
+                    &quot;output&quot;:&quot;file&quot;,
+                    &quot;filename&quot;:&quot;${CADDY_LOG}error.log&quot;
+                },
+                &quot;level&quot;:&quot;ERROR&quot;
+            }
+        }
+    },
+    &quot;storage&quot;:{
+        &quot;module&quot;:&quot;file_system&quot;,
+        &quot;root&quot;:&quot;${CERT_PATH}&quot;
+    },
+    &quot;apps&quot;:{
+        &quot;http&quot;:{
+            &quot;http_port&quot;: ${caddy_port},
+            &quot;servers&quot;:{
+                &quot;srv0&quot;:{
+                    &quot;listen&quot;:[
+                        &quot;:${caddy_port}&quot;
+                    ],
+                    &quot;routes&quot;:[
+                        {
+                            &quot;match&quot;:[
+                                {
+                                    &quot;host&quot;:[
+                                        &quot;${domain}&quot;
+                                    ]
+                                }
+                            ],
+                            &quot;handle&quot;:[
+                                {
+                                    &quot;handler&quot;:&quot;static_response&quot;,
+                                    &quot;headers&quot;:{
+                                        &quot;Location&quot;:[
+                                            &quot;https://{http.request.host}:${caddy_remote_port}{http.request.uri}&quot;
+                                        ]
+                                    },
+                                    &quot;status_code&quot;:301
+                                }
+                            ]
+                        }
+                    ]
+                },
+                &quot;srv1&quot;:{
+                    &quot;listen&quot;:[
+                        &quot;:${caddy_remote_port}&quot;
+                    ],
+                    &quot;routes&quot;:[
+                        {
+                            &quot;handle&quot;:[
+                                {
+                                    &quot;handler&quot;:&quot;subroute&quot;,
+                                    &quot;routes&quot;:[
+                                        {
+                                            &quot;match&quot;:[
+                                                {
+                                                    &quot;host&quot;:[
+                                                        &quot;${domain}&quot;
+                                                    ]
+                                                }
+                                            ],
+                                            &quot;handle&quot;:[
+                                                {
+                                                    &quot;handler&quot;:&quot;file_server&quot;,
+                                                    &quot;root&quot;:&quot;${WEB_PATH}&quot;,
+                                                    &quot;index_names&quot;:[
+                                                        &quot;index.html&quot;,
+                                                        &quot;index.htm&quot;
+                                                    ]
+                                                }
+                                            ],
+                                            &quot;terminal&quot;:true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    &quot;tls_connection_policies&quot;:[
+                        {
+                            &quot;match&quot;:{
+                                &quot;sni&quot;:[
+                                    &quot;${domain}&quot;
+                                ]
+                            }
+                        }
+                    ],
+                    &quot;automatic_https&quot;:{
+                        &quot;disable&quot;:true
+                    }
+                }
+            }
+        },
+        &quot;tls&quot;:{
+            &quot;certificates&quot;:{
+                &quot;automate&quot;:[
+                    &quot;${domain}&quot;
+                ]
+            },
+            &quot;automation&quot;:{
+                &quot;policies&quot;:[
+                    {
+                        &quot;issuers&quot;:[
+                            {
+                                &quot;module&quot;:&quot;acme&quot;,
+                                &quot;email&quot;:&quot;&quot;
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
+</code></pre></div><p>参数解释：</p> <ul><li><code>${CADDY_LOG}</code>：日志文件夹</li> <li><code>${CERT_PATH}</code>：证书文件夹</li> <li><code>${caddy_port}</code>：Caddy端口</li> <li><code>${domain}</code>：你的域名</li> <li><code>${caddy_remote_port}</code>：Caddy转发的端口</li> <li><code>${WEB_PATH}</code>：伪装网站文件夹</li></ul> <ol start="2"><li>手动设置自定义证书</li></ol> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;admin&quot;:{
+        &quot;disabled&quot;:true
+    },
+    &quot;logging&quot;:{
+        &quot;logs&quot;:{
+            &quot;default&quot;:{
+                &quot;writer&quot;:{
+                    &quot;output&quot;:&quot;file&quot;,
+                    &quot;filename&quot;:&quot;${CADDY_LOG}error.log&quot;
+                },
+                &quot;level&quot;:&quot;ERROR&quot;
+            }
+        }
+    },
+    &quot;storage&quot;:{
+        &quot;module&quot;:&quot;file_system&quot;,
+        &quot;root&quot;:&quot;${CERT_PATH}&quot;
+    },
+    &quot;apps&quot;:{
+        &quot;http&quot;:{
+            &quot;http_port&quot;: ${caddy_port},
+            &quot;servers&quot;:{
+                &quot;srv0&quot;:{
+                    &quot;listen&quot;:[
+                        &quot;:${caddy_port}&quot;
+                    ],
+                    &quot;routes&quot;:[
+                        {
+                            &quot;match&quot;:[
+                                {
+                                    &quot;host&quot;:[
+                                        &quot;${domain}&quot;
+                                    ]
+                                }
+                            ],
+                            &quot;handle&quot;:[
+                                {
+                                    &quot;handler&quot;:&quot;static_response&quot;,
+                                    &quot;headers&quot;:{
+                                        &quot;Location&quot;:[
+                                            &quot;https://{http.request.host}:${caddy_remote_port}{http.request.uri}&quot;
+                                        ]
+                                    },
+                                    &quot;status_code&quot;:301
+                                }
+                            ]
+                        }
+                    ]
+                },
+                &quot;srv1&quot;:{
+                    &quot;listen&quot;:[
+                        &quot;:${caddy_remote_port}&quot;
+                    ],
+                    &quot;routes&quot;:[
+                        {
+                            &quot;handle&quot;:[
+                                {
+                                    &quot;handler&quot;:&quot;subroute&quot;,
+                                    &quot;routes&quot;:[
+                                        {
+                                            &quot;match&quot;:[
+                                                {
+                                                    &quot;host&quot;:[
+                                                        &quot;${domain}&quot;
+                                                    ]
+                                                }
+                                            ],
+                                            &quot;handle&quot;:[
+                                                {
+                                                    &quot;handler&quot;:&quot;file_server&quot;,
+                                                    &quot;root&quot;:&quot;${WEB_PATH}&quot;,
+                                                    &quot;index_names&quot;:[
+                                                        &quot;index.html&quot;,
+                                                        &quot;index.htm&quot;
+                                                    ]
+                                                }
+                                            ],
+                                            &quot;terminal&quot;:true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    &quot;tls_connection_policies&quot;:[
+                        {
+                            &quot;match&quot;:{
+                                &quot;sni&quot;:[
+                                    &quot;${domain}&quot;
+                                ]
+                            }
+                        }
+                    ],
+                    &quot;automatic_https&quot;:{
+                        &quot;disable&quot;:true
+                    }
+                }
+            }
+        },
+        &quot;tls&quot;:{
+            &quot;certificates&quot;:{
+                &quot;automate&quot;:[
+                    &quot;${domain}&quot;
+                ],
+                &quot;load_files&quot;:[
+                    {
+                        &quot;certificate&quot;:&quot;/tpdata/cert/certificates/acme-v02.api.letsencrypt.org-directory/${domain}/${domain}.crt&quot;,
+                        &quot;key&quot;:&quot;/tpdata/cert/certificates/acme-v02.api.letsencrypt.org-directory/${domain}/${domain}.key&quot;
+                    }
+                ]
+            },
+            &quot;automation&quot;:{
+                &quot;policies&quot;:[
+                    {
+                        &quot;issuers&quot;:[
+                            {
+                                &quot;module&quot;:&quot;acme&quot;,
+                                &quot;email&quot;:&quot;&quot;
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
+</code></pre></div><p>注意：需要将证书文件上传至证书文件夹：<code>/tpdata/cert/</code>，证书文件名称格式为<code>${domian}.crt</code>和<code>${domian}.key</code>。</p> <p>参数解释：</p> <ul><li><code>${CADDY_LOG}</code>：日志文件夹</li> <li><code>${CERT_PATH}</code>：证书文件夹</li> <li><code>${caddy_port}</code>：Caddy端口</li> <li><code>${domain}</code>：你的域名</li> <li><code>${caddy_remote_port}</code>：Caddy转发的端口</li> <li><code>${WEB_PATH}</code>：伪装网站文件夹</li></ul> <h2 id="安装mariadb"><a href="#安装mariadb" class="header-anchor">#</a> 安装MariaDB</h2> <blockquote><p>Docker Hub：https://hub.docker.com/_/mariadb</p></blockquote> <ol><li><p>Pull the image</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> pull mariadb:10.7.3
+</code></pre></div></li> <li><p>Start a container</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> trojan-panel-mariadb <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
+<span class="token parameter variable">--network</span><span class="token operator">=</span>host <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_DATABASE</span><span class="token operator">=</span><span class="token string">&quot;trojan_panel_db&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${mariadb_pas}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">TZ</span><span class="token operator">=</span>Asia/Shanghai <span class="token punctuation">\</span>
+mariadb:10.7.3 <span class="token punctuation">\</span>
+<span class="token parameter variable">--port</span> <span class="token variable">${mariadb_port}</span>
+</code></pre></div></li></ol> <p>参数解释：</p> <ul><li><code>--name trojan-panel-mariadb</code>：定义容器的名称</li> <li><code>--restart always</code>：容器随着Docker启动而启动</li> <li><code>--network=host</code>：使用Host网络模式</li> <li><code>-e MYSQL_DATABASE=&quot;trojan_panel_db&quot;</code>：容器启动时创建一个默认的<code>trojan_panel_db</code>库</li> <li><code>-e MYSQL_ROOT_PASSWORD=&quot;${mariadb_pas}&quot;</code>：设置MariaDB密码为<code>${mariadb_pas}</code></li> <li><code>-e TZ=Asia/Shanghai</code>：设置时区为上海</li> <li><code>--port ${mariadb_port}</code>：自定义数据库端口（默认:9507）</li></ul> <h2 id="安装redis"><a href="#安装redis" class="header-anchor">#</a> 安装Redis</h2> <blockquote><p>Docker Hub：https://hub.docker.com/_/redis</p></blockquote> <ol><li><p>Pull the image</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> pull redis:6.2.7
+</code></pre></div></li> <li><p>Start a container</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> trojan-panel-redis <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
+<span class="token parameter variable">--network</span><span class="token operator">=</span>host <span class="token punctuation">\</span>
+redis:6.2.7 <span class="token punctuation">\</span>
+redis-server <span class="token parameter variable">--requirepass</span> <span class="token string">&quot;<span class="token variable">${redis_pass}</span>&quot;</span> <span class="token parameter variable">--port</span> <span class="token variable">${redis_port}</span>
+</code></pre></div></li></ol> <p>参数解释：</p> <ul><li><code>--name trojan-panel-redis</code>：定义容器的名称</li> <li><code>--restart always</code>：容器随着Docker启动而启动</li> <li><code>--network=host</code>：使用Host网络模式</li> <li><code>redis-server --requirepass &quot;${redis_pass}&quot; --port ${redis_port}</code>：设置Redis密码为<code>${redis_pass}</code>
+设置Redis端口为<code>${redis_port}</code>（默认:6378）</li></ul> <h2 id="安装trojan-panel-backend"><a href="#安装trojan-panel-backend" class="header-anchor">#</a> 安装Trojan Panel Backend</h2> <blockquote><p>Docker Hub：https://hub.docker.com/r/jonssonyan/trojan-panel</p></blockquote> <ol><li><p>Pull the image</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> pull jonssonyan/trojan-panel
+</code></pre></div></li> <li><p>Start a container</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> trojan-panel <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
+<span class="token parameter variable">--network</span><span class="token operator">=</span>host <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${WEB_PATH}</span>:/tpdata/trojan-panel/webfile/ <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_LOGS}</span>:/tpdata/trojan-panel/logs/ <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_EXPORT}</span>:/tpdata/trojan-panel/export/ <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_TEMPLATE}</span>:/tpdata/trojan-panel/template/ <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> /etc/localtime:/etc/localtime <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">GIN_MODE</span><span class="token operator">=</span>release <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_ip=<span class="token variable">${mariadb_ip}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_port=<span class="token variable">${mariadb_port}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_user=<span class="token variable">${mariadb_user}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_pas=<span class="token variable">${mariadb_pas}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;redis_host=<span class="token variable">${redis_host}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;redis_port=<span class="token variable">${redis_port}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;redis_pass=<span class="token variable">${redis_pass}</span>&quot;</span> <span class="token punctuation">\</span>
+jonssonyan/trojan-panel
+</code></pre></div></li></ol> <p>参数解释：</p> <ul><li><code>--name trojan-panel</code>：定义容器的名称</li> <li><code>--restart always</code>：容器随着Docker启动而启动</li> <li><code>--network=host</code>：使用Host网络模式</li> <li><code>-v ${WEB_PATH}:/tpdata/trojan-panel/webfile/</code>：映射伪装网站文件夹</li> <li><code>-v ${TROJAN_PANEL_LOGS}:/tpdata/trojan-panel/logs/</code>：映射日志文件夹</li> <li><code>-v ${TROJAN_PANEL_EXPORT}:/tpdata/trojan-panel/export/</code>：映射导出文件文件夹</li> <li><code>-v ${TROJAN_PANEL_TEMPLATE}:/tpdata/trojan-panel/template/</code>：映射模板文件夹</li> <li><code>-v /etc/localtime:/etc/localtime</code>：同步宿主机和容器的时区</li> <li><code>-e GIN_MODE=release</code>：release模式启动</li> <li><code>-e &quot;mariadb_ip=${mariadb_ip}&quot;</code>：<code>${mariadb_ip}</code>为 MariaDB 数据库的 IP 地址(默认:本机数据库)</li> <li><code>-e &quot;mariadb_port=${mariadb_port}&quot;</code>：<code>${mariadb_port}</code>为 MariaDB 数据库的端口(默认:本机数据库端口)</li> <li><code>-e &quot;mariadb_user=${mariadb_user}&quot;</code>：<code>${mariadb_user}</code>为 MariaDB 数据库的用户名(默认:root)</li> <li><code>-e &quot;mariadb_pas=${mariadb_pas}&quot;</code>：<code>${mariadb_pas}</code>为 MariaDB 数据库密码(必填)</li> <li><code>-e &quot;redis_host=${redis_host}&quot;</code>：<code>${redis_host}</code>为 Redis 的 IP 地址(默认:本机 Redis)</li> <li><code>-e &quot;redis_port=${redis_port}&quot;</code>：<code>${redis_port}</code>为 Redis 的端口(默认:本机 Redis 端口)</li> <li><code>-e &quot;redis_pass=${redis_pass}&quot;</code>：<code>${redis_pass}</code>为 Redis 的密码(必填)</li></ul> <h2 id="安装trojan-panel-frontend"><a href="#安装trojan-panel-frontend" class="header-anchor">#</a> 安装Trojan Panel Frontend</h2> <blockquote><p>Docker Hub：https://hub.docker.com/r/jonssonyan/trojan-panel-ui</p></blockquote> <ol><li><p>Pull the image</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> pull jonssonyan/trojan-panel-ui
+</code></pre></div></li> <li><p>Start a container</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> trojan-panel-ui <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
+<span class="token parameter variable">--network</span><span class="token operator">=</span>host <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token string">&quot;<span class="token variable">${UI_NGINX_CONFIG}</span>&quot;</span><span class="token builtin class-name">:</span><span class="token string">&quot;/etc/nginx/conf.d/default.conf&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${CERT_PATH}</span><span class="token builtin class-name">:</span><span class="token variable">${CERT_PATH}</span> <span class="token punctuation">\</span>
+jonssonyan/trojan-panel-ui
+</code></pre></div></li></ol> <p>参数解释：</p> <ul><li><code>--name trojan-panel-ui</code>：定义容器名称</li> <li><code>--restart always</code>：容器随着Docker启动而启动</li> <li><code>--network=host</code>：使用Host网络模式</li> <li><code>-v &quot;${NGINX_CONFIG}&quot;:&quot;/etc/nginx/conf.d/default.conf&quot;</code>：映射Nginx配置文件</li> <li><code>-v ${CERT_PATH}:${CERT_PATH}</code>：映射证书文件夹</li></ul> <p>Nginx配置举例</p> <ol><li>使用 https</li></ol> <div class="language- extra-class"><pre class="language-text"><code>server {
+    listen       ${trojan_panel_ui_port} ssl;
+    server_name  localhost;
+    #强制ssl
+    ssl on;
+    ssl_certificate      ${CERT_PATH}${domain}.crt;
+    ssl_certificate_key  ${CERT_PATH}${domain}.key;
+    #缓存有效期
+    ssl_session_timeout  5m;
+    #安全链接可选的加密协议
+    ssl_protocols  TLSv1.3;
+    #加密算法
+    ssl_ciphers  ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+    #使用服务器端的首选算法
+    ssl_prefer_server_ciphers  on;
+    #access_log  /var/log/nginx/host.access.log  main;
+    location / {
+        root   ${TROJAN_PANEL_UI_DATA};
+        index  index.html index.htm;
+    }
+    location /api {
+        proxy_pass http://127.0.0.1:8081;
+    }
+    #error_page  404              /404.html;
+    #497 http-&gt;https
+    error_page  497               https://\$host:${trojan_panel_ui_port}\$request_uri;
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+</code></pre></div><p>参数解释：</p> <ul><li><code>${trojan_panel_ui_port}</code>：Trojan Panel 端口</li> <li><code>${CERT_PATH}</code>：证书文件夹</li> <li><code>${domain}</code>：你的域名</li> <li><code>${TROJAN_PANEL_UI_DATA}</code>：前端编译文件所在的文件夹</li></ul> <ol start="2"><li>使用 http</li></ol> <div class="language- extra-class"><pre class="language-text"><code>server {
+    listen       ${trojan_panel_ui_port};
+    server_name  localhost;
+    location / {
+        root   ${TROJAN_PANEL_UI_DATA};
+        index  index.html index.htm;
+    }
+    location /api {
+        proxy_pass http://127.0.0.1:8081;
+    }
+    error_page  497               http://\$host:${trojan_panel_ui_port}\$request_uri;
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+</code></pre></div><p>参数解释：</p> <ul><li><code>${trojan_panel_ui_port}</code>：Trojan Panel 前端端口</li> <li><code>${TROJAN_PANEL_UI_DATA}</code>：前端编译文件所在的文件夹</li></ul> <h2 id="安装trojan-panel-core"><a href="#安装trojan-panel-core" class="header-anchor">#</a> 安装Trojan Panel Core</h2> <blockquote><p>Docker Hub：https://hub.docker.com/r/jonssonyan/trojan-panel-core</p></blockquote> <ol><li><p>Pull the image</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> pull jonssonyan/trojan-panel-core
+</code></pre></div></li> <li><p>Start a container</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> trojan-panel-core <span class="token parameter variable">--restart</span> always <span class="token punctuation">\</span>
+<span class="token parameter variable">--network</span><span class="token operator">=</span>host <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/xray/config:<span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/xray/config <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/trojango/config:<span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/trojango/config <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/hysteria/config:<span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/hysteria/config <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/naiveproxy/config:<span class="token variable">${TROJAN_PANEL_CORE_DATA}</span>bin/naiveproxy/config <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_CORE_LOGS}</span><span class="token builtin class-name">:</span><span class="token variable">${TROJAN_PANEL_CORE_LOGS}</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${TROJAN_PANEL_CORE_SQLITE}</span><span class="token builtin class-name">:</span><span class="token variable">${TROJAN_PANEL_CORE_SQLITE}</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${CERT_PATH}</span><span class="token builtin class-name">:</span><span class="token variable">${CERT_PATH}</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> <span class="token variable">${WEB_PATH}</span><span class="token builtin class-name">:</span><span class="token variable">${WEB_PATH}</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-v</span> /etc/localtime:/etc/localtime <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token assign-left variable">GIN_MODE</span><span class="token operator">=</span>release <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_ip=<span class="token variable">${mariadb_ip}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_port=<span class="token variable">${mariadb_port}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_user=<span class="token variable">${mariadb_user}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;mariadb_pas=<span class="token variable">${mariadb_pas}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;database=<span class="token variable">${database}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;account-table=<span class="token variable">${account_table}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;redis_host=<span class="token variable">${redis_host}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;redis_port=<span class="token variable">${redis_port}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;redis_pass=<span class="token variable">${redis_pass}</span>&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;crt_path=<span class="token variable">${CERT_PATH}</span><span class="token variable">${domain}</span>.crt&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;key_path=<span class="token variable">${CERT_PATH}</span><span class="token variable">${domain}</span>.key&quot;</span> <span class="token punctuation">\</span>
+<span class="token parameter variable">-e</span> <span class="token string">&quot;grpc_port=<span class="token variable">${grpc_port}</span>&quot;</span> <span class="token punctuation">\</span>
+jonssonyan/trojan-panel-core
+</code></pre></div></li></ol> <p>参数解释：</p> <ul><li><code>--name trojan-panel-core</code>：定义容器名称</li> <li><code>--restart always</code>：容器随着Docker启动而启动</li> <li><code>--network=host</code>：使用Host网络模式</li> <li><code>-v ${TROJAN_PANEL_CORE_DATA}bin/xray/config:${TROJAN_PANEL_CORE_DATA}bin/xray/config</code>：映射Xray配置文件夹</li> <li><code>-v ${TROJAN_PANEL_CORE_DATA}bin/trojango/config:${TROJAN_PANEL_CORE_DATA}bin/trojango/config</code>：映射TrojanGo配置文件夹</li> <li><code>-v ${TROJAN_PANEL_CORE_DATA}bin/hysteria/config:${TROJAN_PANEL_CORE_DATA}bin/hysteria/config</code>：映射Hysteria配置文件夹</li> <li><code>-v ${TROJAN_PANEL_CORE_DATA}bin/naiveproxy/config:${TROJAN_PANEL_CORE_DATA}bin/naiveproxy/config</code>：映射NaiveProxy配置文件夹</li> <li><code>-v ${TROJAN_PANEL_CORE_LOGS}:${TROJAN_PANEL_CORE_LOGS}</code>：映射日志文件夹</li> <li><code>-v ${TROJAN_PANEL_CORE_SQLITE}:${TROJAN_PANEL_CORE_SQLITE}</code>：映射SQLite文件夹</li> <li><code>-v ${CERT_PATH}:${CERT_PATH}</code>：映射证书文件夹</li> <li><code>-v ${WEB_PATH}:${WEB_PATH}</code>：映射回落资源文件夹</li> <li><code>-v /etc/localtime:/etc/localtime</code>：同步宿主机和容器的时区</li> <li><code>-e GIN_MODE=release</code>：release模式启动</li> <li><code>-e &quot;mariadb_ip=${mariadb_ip}&quot;</code>：<code>${mariadb_ip}</code>为 MariaDB 数据库的 IP 地址(默认:本机数据库)</li> <li><code>-e &quot;mariadb_port=${mariadb_port}&quot;</code>：<code>${mariadb_port}</code>为 MariaDB 数据库的端口(默认:本机数据库端口)</li> <li><code>-e &quot;mariadb_user=${mariadb_user}&quot;</code>：<code>${mariadb_user}</code>为 MariaDB 数据库的用户名(默认:root)</li> <li><code>-e &quot;mariadb_pas=${mariadb_pas}&quot;</code>：<code>${mariadb_pas}</code>为 MariaDB 数据库密码(默认:123456)</li> <li><code>-e &quot;database=${database}&quot;</code>：<code>${database}</code>为数据库名称</li> <li><code>-e &quot;account-table=${account_table}&quot;</code>：<code>${account_table}</code>为用户表名称</li> <li><code>-e &quot;redis_host=${redis_host}&quot;</code>：<code>${redis_host}</code>为 Redis 的 IP 地址(默认:本机 Redis)</li> <li><code>-e &quot;redis_port=${redis_port}&quot;</code>：<code>${redis_port}</code>为 Redis 的端口(默认:本机 Redis 端口)</li> <li><code>-e &quot;redis_pass=${redis_pass}&quot;</code>：<code>${redis_pass}</code>为 Redis 的密码(默认:123456)</li> <li><code>-e &quot;crt_path=${CERT_PATH}${domain}.crt&quot;</code>：自定义证书.crt文件路径</li> <li><code>-e &quot;key_path=${CERT_PATH}${domain}.key&quot;</code>：自定义证书.key文件路径</li> <li><code>-e &quot;grpc_port=${grpc_port}&quot;</code>：自定义服务器之间的通讯端口</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/24/2023, 12:49:36 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/install-tutorial/installation.html" class="prev">
+        自动安装教程
+      </a></span> <span class="next"><a href="/install-tutorial/docker-compose.html">
+        Docker Compose方式安装
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.384b123e.js" defer></script><script src="/assets/js/2.1c3af5e4.js" defer></script><script src="/assets/js/11.0fe16700.js" defer></script>
+  </body>
+</html>
